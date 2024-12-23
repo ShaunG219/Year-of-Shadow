@@ -22,16 +22,97 @@
         }
 
 
-        .container{
-            background-color: rgb(135, 130, 123);
-            height: 600px;
+        .container-box{
+          background-color: rgb(27, 35, 52);
+          height: 600px;
             width: 1000px;
+            display: flex;
+            flex-direction: column;
             
+            padding: 0px;
         }
+
+        .card-container{
+            margin-top: 20px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .carousel-container{
+            height:200px;
+            width:100%;
+        }
+
+        .c-item{
+            height: 200px;
+            border: 7px solid #ffffff;
+        }
+        
+        .c-img{
+            height: 100%;
+            filter: brightness(0.6)
+        }
+
+        
+
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-box">
+        <div class="carousel-container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active c-item">
+                    <img src="./images/SEGA_FearlessYearoftheShadowCampaignFeatured-jpg.webp" class="d-block w-100 c-img" alt="...">
+                  </div>
+                  <div class="carousel-item c-item">
+                    <img src="./images/shadow-motorcycle.png" class="d-block w-100 c-img" alt="...">
+                  </div>
+                  <div class="carousel-item c-item">
+                    <img src="./images/shadowNMaria.png" class="d-block w-100 c-img" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-item" style="width: 18rem;">
+                <img src="./images/XGensLaunchCover.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./images/shadow-the-hedgehog-movie.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./images/fearless-merch-target.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
