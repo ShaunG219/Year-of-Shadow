@@ -24,18 +24,31 @@
 
         .container-box{
           background-color: rgb(27, 35, 52);
-          height: 600px;
-            width: 1000px;
-            display: flex;
+          height:auto;
+          width: 60vw;
+          display: flex;
+          margin-top: 10px;
+          flex-direction: column;
+          min-width: 390px;
+        }
+
+        @media (max-width: 900px)
+        {
+          .card-container{
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
         }
 
         .card-container{
-            margin-top: 20px;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
+          background: none;
+          margin-top: 20px;
+          height: auto;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
         }
 
         .carousel-container{
@@ -44,8 +57,8 @@
         }
 
         .c-item{
-            height: 200px;
-            border: 7px solid #ffffff;
+          height: 200px;
+          border: 7px solid #ffffff;
         }
         
         .c-img{
@@ -72,6 +85,14 @@
           background-color: rgb(34, 29, 29);
           border-color: rgb(225, 220, 118); 
         }
+
+       .copyright{
+        color: #c7bebe;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+      
+       }
     </style>
 </head>
 <body>
@@ -105,7 +126,7 @@
                 <div class="card-body">
                   <h5 class="card-title">SXS Generations</h5>
                   <p class="card-text">In this new standalone campaign, Shadow's nemesis, Black Doom, has reemerged and threatens to take over the world once again.</p>
-                  <a href="#" class="btn btn-primary">Checkout Game</a>
+                  <a href="https://sonicxshadowgenerations.com/?lang=en" class="btn btn-primary">Checkout Game</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -113,7 +134,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Sonic the Hedghehog 3</h5>
                   <p class="card-text">Sonic, Knuckles and Tails reunite to battle Shadow, a mysterious new enemy with powers unlike anything they've faced before.</p>
-                  <a href="#" class="btn btn-primary">Checkout Movie</a>
+                  <a href="https://www.sonicthehedgehogmovie.com/" class="btn btn-primary">Checkout Movie</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -121,9 +142,12 @@
                 <div class="card-body">
                   <h5 class="card-title">Shadow Merchandise</h5>
                   <p class="card-text">Items have been released with a broad range including t-shirts, hoodies, phone cases and accessories.</p>
-                  <a href="#" class="btn btn-primary">Checkout Merch</a>
+                  <a href="https://www.amazon.com/stores/page/9DAB4DE6-07D7-44EF-A1D8-F4DE18CB384F" class="btn btn-primary">Checkout Merch</a>
                 </div>
             </div>
+        </div>
+        <div class = "copyright">
+          <p>&copy; 2024 Shaun Gorllapati. All rights reserved. Images sourced from SEGA. Rights belong to their respective owners.</p>
         </div>
     </div>
     
