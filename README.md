@@ -7,7 +7,7 @@
 
 <p>
   <b>Purpose:</b>
-   Celebrate the Year of Shadow campagin by providing an organized info card containing all the content that was part of the campaign.
+   Celebrating the Year of Shadow campagin by providing an organized info card containing all the content that was part of the campaign.
 </p>
 
 <p>
